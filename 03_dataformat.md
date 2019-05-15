@@ -72,7 +72,7 @@ Age と Survived との間には相関はありそうですが、他の列に比
 
 7. [**Cleaning mode**] で "Replace with mean" を選択します。
 ![Cleaning Mode Setting](./images/03/set_cleaning_mode.jpg)
-8. "Compute Target" ダイアログが表示されたら、[**Select existing**] をクリックして、先ほど作成した Compute Target を選択して、[Run] をクリックします。
+8. "Compute Target" ダイアログが表示されたら、[**Select existing**] をクリックして、作成済みの Compute Target を選択して [Run] をクリックします。
 ![Run for Clean Missing Value](./images/03/run_for_clean_missing_data.jpg)
 9. 実行が終了したら、"Clean Missing Data" モジュールの **左側の出力ノード** で右クリックして、[**Visualize**] をクリックします。
 ![Visualize Clean Missing Data](./images/03/visualize_clean_missing_data.jpg)
