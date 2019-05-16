@@ -4,7 +4,7 @@
 
 このコンテンツのテーマは、タイタニック号の乗船リスト から、どのような属性の人が "助かる" かを予測 することです。
 
-![Azure Machine Learning Service Visual interface](./images/02/vi_experiment.jpg)
+![Azure Machine Learning Service Visual interface](./images/vi_experiment.jpg)
 
 ---
 
@@ -34,7 +34,7 @@ Visual interface に興味がある場合も、一度簡単なモデルで操作
 3. [データを整形する](./03_dataformat.md)
 4. [モデルを作成する](./04_createmodel.md)
 5. [学習済みモデルを評価する](./05_evaluatemodel.md)
-6. 予測モデル（学習済みモデル）を発行する (準備中)
+6. [予測モデル（学習済みモデル）を発行する](./06_deploymodel.md)
 7. 発行したサービスを利用する (準備中)
 
 > このコンテンツの実施には、Azure サブスクリプション（無償評価版でも可）が必要です。
