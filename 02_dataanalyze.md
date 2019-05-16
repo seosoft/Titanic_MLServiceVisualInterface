@@ -37,7 +37,7 @@
 
    ![Create ML Service Workspace](./images/02/azure__workspace_info.jpg)
 6. リソースが作成できたら、Workspace に移動します。
-![Machine Learning Service Workspace Top](mlservice_workspace_top.jpg)
+![Machine Learning Service Workspace Top](./images/02/mlservice_workspace_top.jpg)
 
 ---
 
