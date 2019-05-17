@@ -39,7 +39,6 @@ Age が空のデータを削除するやり方もありますが、今回は Age
 
    - Survived
    - Pclass
-   - Name
    - Sex
    - Age
    - SibSp
@@ -76,10 +75,10 @@ Age と Survived との間には相関はありそうですが、他の列に比
 ![Run for Clean Missing Value](./images/03/run_for_clean_missing_data.jpg)
 9. 実行が終了したら、"Clean Missing Data" モジュールの **左側の出力ノード** で右クリックして、[**Visualize**] をクリックします。
 ![Visualize Clean Missing Data](./images/03/visualize_clean_missing_data.jpg)
-10. 結果画面で、以下の内容を確認します。  
+10. 結果画面で、以下の内容を確認します。
 
    - 行数は 891行のままで、元データから変更がないこと
-   - 列は 8列になっていること
+   - 列は 7列になっていること
    - "Age" 列のヘッダーをクリックし、"Missing Value" が 0 になっていること
    - "Age" 列に、平均値である "29.699118" が入っている行が見つかること
 

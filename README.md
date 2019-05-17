@@ -2,9 +2,9 @@
 
 このコンテンツでは、**Azure Machine Learning Service Visual interface** (preview) を使って 二項分類 を行う手順を紹介します。
 
-このコンテンツのテーマは、タイタニック号の乗船リスト から、どのような属性の人が "助かる" かを予測 することです。
+このコンテンツのテーマは、**タイタニック号の乗船リスト** から、どのような属性の人が **"助かる" かを予測** することです。
 
-![Azure Machine Learning Service Visual interface](./images/vi_experiment.jpg)
+![Azure Machine Learning Service Visual interface](./images/02/vi_experiment.jpg)
 
 ---
 
@@ -19,9 +19,9 @@ GUI 操作で、機械学習・深層学習の予測分析ソリューション�
 
 ---
 
-このコンテンツの目的は、Visual interface の操作を理解することです。構造化データ（Excel や CSV のような表形式の構造を持つデータ）をシンプルな機械学習（深層学習ではなく）で学習してみます。
+このコンテンツの目的は、**Visual interface の操作を理解** することです。構造化データ（Excel や CSV のような表形式の構造を持つデータ）をシンプルな機械学習（深層学習ではなく）で学習してみます。
 データの構造が簡単であり学習モデルも簡単なので、AI 技術を理解する上でも機械学習で感覚をつかむのがよいでしょう。  
-Visual interface に興味がある場合も、一度簡単なモデルで操作を覚えるのが良いと思います。
+Visual interface に興味がある場合も、一度簡単な学習モデルで操作方法を覚えるのが良いと思います。
 
 ---
 
@@ -35,9 +35,9 @@ Visual interface に興味がある場合も、一度簡単なモデルで操作
 4. [モデルを作成する](./04_createmodel.md)
 5. [学習済みモデルを評価する](./05_evaluatemodel.md)
 6. [予測モデル（学習済みモデル）を発行する](./06_deploymodel.md)
-7. 発行したサービスを利用する (準備中)
+7. [発行したサービスを利用する](./07_requestservice.md)
 
-> このコンテンツの実施には、Azure サブスクリプション（無償評価版でも可）が必要です。
+> このコンテンツの実施には、**Azure サブスクリプション**（無償評価版でも可）が必要です。
 
 ---
 

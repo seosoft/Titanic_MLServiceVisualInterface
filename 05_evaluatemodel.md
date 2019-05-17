@@ -46,7 +46,7 @@
 まずは "**Accuracy**" と "**F1 Score**" に注目するとよいでしょう。どちらも **1 に近いほど** 優秀なモデルであることを意味します。"Accuracy" はモデルの "精度" を表します。"F1 Score" は総合的な "成績" を表します。  
 ![Visualize Evaluate Model 1](./images/05/evaluate_model_result2.jpg)  
 
-   > Accuracy が 0.775 なので、80% 程度は正しく予測できるモデルだと言えます。  
+   > Accuracy が 0.809 なので、80% 程度は正しく予測できるモデルだと言えます。  
    > モデルの用途によっては、"Precision" と "Recall" の値も気にかける必要があります。
 
 ここまでが **学習の一連の操作** です。  
@@ -79,14 +79,18 @@
 
 |モデルで使用したアルゴリズム|Accuracy|F1 Score|
 |---|---|---|
-|Two-Class Support Vector Machine|0.775|0.718|
-|Two-Class Neural Network|0.809|0.764|
+|Two-Class Support Vector Machine|0.809|0.764|
+|Two-Class Neural Network|0.803|0.752|
 
-"Two-Class Neural Network" を使ったモデルのほうが優秀であることが分かりました。
+今回の学習では "Two-Class Support Vector Machine" を使ったモデルのほうが優秀であることが分かりました。  
+スコアは必ずしも同じものにならないかもしれません。データ分割された結果などによっても変わりますが、大体 0.8 くらいの値になるはずです。
 
-> 数値だけの比較では Two-Class Neural Network が優秀だというだけで、常にこちらを使うべきということではありません。  
-> 目的や用途に応じて、Two-Class Vector Machine を使うほうが良い、または使ってもよいということはあります。
+> 数値だけの比較では Two-Class Support Vector Machine が優秀だというだけで、常にこちらを使うべきということではありません。  
+> 目的や用途に応じて、他のアルゴリズムを使うほうが良い、または使ってもよいということはあります。
 > 目的を満たすのであれば、必ずしもスコアが一番高いモデルである必要はありません。
+>
+> なお、特に深層学習の場合は、Neural Network のほうが良いスコアが出ることが多いですが、今回は過学習などの問題が発生している可能性があります。  
+> これについての考察は今回は省略します。
 
 ---
 
@@ -103,7 +107,8 @@
 4. [Run] で未実行のモジュールを実行します。  
 "Compute Target" ダイアログが表示されたら、[**Select existing**] をクリックして、作成済みの Compute Target を選択して [Run] をクリックします。
 5. 最後に置いた [Evaluate Model] の出力ノードを右クリックして [Visualize] を選択します。  
-二つのモデルの ROC 曲線が表示されます。部分的に逆転している箇所がありますが、**右側の入力ノード** (あとで作った Two-Class Neural Network から接続されたもの) のほうがグラフが上になっているのが分かります。
+二つのモデルの ROC 曲線が表示されます。部分的に逆転している箇所がありますが、あまり差異が分かりません。  
+一般には、Accuracy, F1 Score, ROC 曲線などを見て良いモデルを決めます。今回は ROC 曲線では分かりづらいので、Accuracy, F1 Score でより高い数値を出した "**Two-Class Support Vector Machine**" の予測モデルをデプロイすることにします。
 ![Visualize Two Models Result](./images/05/evaluate_roc_for_two_models.jpg)
 
 ---
