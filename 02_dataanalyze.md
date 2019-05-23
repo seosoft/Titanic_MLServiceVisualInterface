@@ -25,7 +25,7 @@
 3. [検索ボックス] に "machine learning" と入力して、"**Machine learning service workspace**" を検索して、クリックします。
 ![Search ML Service Workspace](./images/02/azure_search_ml_workspace.jpg)
 4. Machine Learning サービスワークスペースで [**作成**] をクリックします。
-![Create Workspace](./02/images/azure_create_workspace.jpg)
+![Create Workspace](./images/02/azure_create_workspace.jpg)
 5. 以下の情報を入力して [作成] をクリックします。  
 
    |項目名|値|
@@ -35,7 +35,7 @@
    |リソースグループ|任意 (ここでは "Titanic"、新規作成するには [新規作成] をクリック)|
    |場所|任意（"米国西部2" など）|
 
-   ![Create ML Service Workspace](./images/02/azure__workspace_info.jpg)
+   ![Create ML Service Workspace](./images/02/azure_workspace_info.jpg)
 6. リソースが作成できたら、Workspace に移動します。
 ![Machine Learning Service Workspace Top](./images/02/mlservice_workspace_top.jpg)
 
